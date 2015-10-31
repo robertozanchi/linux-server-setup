@@ -41,12 +41,8 @@ is 54.148.92.221.
 
 ##### 1. SSH into Server as Root User
 In step 1 the Ubuntu Linus server is accessed as root user.
-1. Note public IP address of virtual machine: 54.148.92.221.
-2. 
 
-1. Update the values at the top of `settings.py` to
-   reflect the respective client IDs you have registered in the
-   [Developer Console][3].
+1. Note public IP address of virtual machine: 54.148.92.221.
 1. Update the value of CLIENT_ID in `static/js/app.js` to the Web client ID.
 
 #### 2.
