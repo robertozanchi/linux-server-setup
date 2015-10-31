@@ -28,7 +28,7 @@ This section outlines the different stages of installation. Its two parts
 are 'Basic Setup and Deployment of Web App', which presents how the project
 meets the basic Udacity requirements, and 'Additional Functionalities', 
 which describes the steps taken to exceed minimum specifications. Links to 
-third-party resources used are also included. 
+third-party resources used are also included in this section. 
 
 #### Basic Setup and Deployment of Web App
 
