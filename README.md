@@ -33,7 +33,8 @@ third-party resources used are also included in this section.
 #### Basic Setup and Deployment of Web App
 
 ##### 0. Access to the Development Environment
-
+The Amazon AWS development environment is available to Udacity Full Stack
+Development Nanodegree students as part of the [account][2]
 ##### 1. SSH into Server as Root User
 
 #### 2.
@@ -43,3 +44,5 @@ third-party resources used are also included in this section.
 ### Notes for Reviewer
 
 [1]: https://github.com/robertozanchi/catalog-app
+[2]: https://www.udacity.com/account#!/development_environment
+
