@@ -44,7 +44,12 @@ In step 1 the Ubuntu Linus server is accessed as root user.
 
 1. Note public IP address of virtual machine: 54.148.92.221.
 2. Download private key provided by Udacity.
-3. 
+3. Move the private key file into the folder ~/.ssh:  
+  `$ mv ~/Downloads/udacity_key.rsa ~/.ssh/`
+4. Set file rights (only owner can write and read.):  
+  `$ chmod 600 ~/.ssh/udacity_key.rsa`
+5. SSH into the instance:  
+  `<pre>$ ssh -i ~/.ssh/udacity_key.rsa root@PUPLIC-IP-ADDRESS` 
 
 #### 2.
 
