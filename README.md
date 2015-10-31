@@ -51,6 +51,8 @@ In step 1 the Ubuntu Linus server is accessed as root user.
 5. SSH into the instance:  
   `$ ssh -i ~/.ssh/udacity_key.rsa root@54.148.92.221` 
 
+Resources: [Udacity][3]
+
 #### 2.
 
 #### Additional Functionalities
@@ -59,4 +61,4 @@ In step 1 the Ubuntu Linus server is accessed as root user.
 
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
-
+[3]: https://www.udacity.com/account#!/development_environment
