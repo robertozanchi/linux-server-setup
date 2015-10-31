@@ -43,7 +43,8 @@ is 54.148.92.221.
 In step 1 the Ubuntu Linus server is accessed as root user.
 
 1. Note public IP address of virtual machine: 54.148.92.221.
-1. Update the value of CLIENT_ID in `static/js/app.js` to the Web client ID.
+2. Download private key provided by Udacity.
+3. 
 
 #### 2.
 
