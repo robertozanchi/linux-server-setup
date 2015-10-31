@@ -27,7 +27,7 @@ ssh -i ~/.ssh/udacity grader@54.148.92.221 -p 2200
 This section outlines the different stages of installation. Its two parts
 are 'Basic Setup and Deployment of Web App', which presents how the project
 meets the basic project requirements, and 'Additional Functionalities', 
-which describes the steps taken to exceed minimum requirements. Links to 
+which describes the steps taken to exceed minimum specifications. Links to 
 third-party resources used are also included. 
 
 #### Basic Setup and Deployment of Web App
