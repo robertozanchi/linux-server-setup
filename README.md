@@ -42,6 +42,8 @@ is 54.148.92.221.
 ##### 1. SSH into Server as Root User
 In step 1 the Ubuntu Linus server is accessed as root user.
 1. Note public IP address of virtual machine: 54.148.92.221.
+2. 
+
 #### 2.
 
 #### Additional Functionalities
