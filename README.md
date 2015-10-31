@@ -34,7 +34,10 @@ third-party resources used are also included in this section.
 
 ##### 0. Access to the Development Environment
 The Amazon AWS development environment is available to Udacity Full Stack
-Development Nanodegree students as part of the [account][2]
+Development Nanodegree students as part of the [account][2].
+
+The public IP address of the virtual machine used in this project is 54.148.92.221.
+
 ##### 1. SSH into Server as Root User
 
 #### 2.
