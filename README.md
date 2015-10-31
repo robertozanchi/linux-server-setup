@@ -32,14 +32,14 @@ third-party resources used are also included in this section.
 
 #### Basic Setup and Deployment of Web App
 
-##### 0. Access to the Development Environment
+##### 1. Access to the development environment
 The Amazon AWS development environment is available to Udacity Full Stack
 Development Nanodegree students as part of the [account][2].
 
 The public IP address of the virtual machine created and used in this project
 is 54.148.92.221.
 
-##### 1. SSH into Server as Root User
+##### 2. SSH into server as root user
 In step 1 the Ubuntu Linux server is accessed as root user for the first time.
 
 1. Note public IP address of virtual machine: 54.148.92.221.
@@ -53,7 +53,7 @@ In step 1 the Ubuntu Linux server is accessed as root user for the first time.
 
 Resources: [Udacity][3]
 
-#### 2.
+##### 3. Create a new user named grader
 
 #### Additional Functionalities
 
