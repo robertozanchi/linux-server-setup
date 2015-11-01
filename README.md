@@ -32,7 +32,7 @@ third-party resources used are also included in this section.
 #### Basic Setup and Deployment of Web App
 
 ##### 1. Access the development environment
-The Amazon AWS development environment is available to Udacity FSWD Nanodegree
+The Amazon AWS development environment is available to FSWD Nanodegree
 students through their [Udacity account][2].
 
 The public IP address of the virtual machine created and used in this project
