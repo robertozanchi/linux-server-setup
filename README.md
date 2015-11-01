@@ -53,6 +53,16 @@ time are:
 
 Sources: [Udacity][3]
 
+##### 3. Update all currently installed packages
+The steps to update the packages installed on the server are:
+
+1. Update the list of available packages and their versions:  
+  `$ sudo apt-get update`
+2. Install newer vesions of packages you have:  
+  `$ sudo sudo apt-get upgrade`
+
+Sources: [Ask Ubuntu][4]
+
 ##### 3. Create new user 'grader' with sudo permission
 The steps to create a new user 'grader' that has sudo permission are:
 
@@ -65,17 +75,11 @@ The steps to create a new user 'grader' that has sudo permission are:
 4. Check that 'grader' was added by listing all users:    
   `$ cut -d: -f1 /etc/passwd`
 
-Sources: [Ask Ubuntu][4], [Digital Ocean][5]
+Sources: [Ask Ubuntu][6], [Digital Ocean][5]
 
-##### 4. Update all currently installed packages
-The steps to update the packages installed on the server are:
 
-1. Update the list of available packages and their versions:  
-  `$ sudo apt-get update`
-2. Install newer vesions of packages you have:  
-  `$ sudo sudo apt-get upgrade`
 
-Sources: [Ask Ubuntu][6]
+##### 5. Change the SSH port from 22 to 2200
 
 ##### 5. Change the SSH port from 22 to 2200
 The steps to change SSH port to 2200 are:
@@ -92,6 +96,6 @@ The steps to change SSH port to 2200 are:
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
 [3]: https://www.udacity.com/account#!/development_environment
-[4]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
+[4]: http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade "What is the difference between apt-get update and upgrade?"
 [5]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
-[6]: http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade "What is the difference between apt-get update and upgrade?"
+[4]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
