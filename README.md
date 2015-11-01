@@ -39,7 +39,8 @@ The public IP address of the virtual machine created and used in this project
 is 54.148.92.221.
 
 #### 2. SSH into server as root user
-In step 1 the Ubuntu Linux server is accessed as root user for the first time.
+The steps to access the Ubuntu Linux server as the root user for the first
+time are:
 
 1. Note public IP address of virtual machine: 54.148.92.221.
 2. Download private key provided by Udacity.
