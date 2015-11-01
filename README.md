@@ -63,6 +63,8 @@ Sources: [Digital Ocean][4]
 
 ### Additional Functionalities
 
+## Resources
+
 ## Notes for Reviewer
 
 [1]: https://github.com/robertozanchi/catalog-app
