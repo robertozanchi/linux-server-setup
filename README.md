@@ -24,12 +24,12 @@ SSH into the server as 'grader' with: ssh -i ~/.ssh/udacity grader@54.148.92.221
 
 ### Step by Step Installation
 This section outlines the different stages of installation. Its two parts
-are **Basic Setup and Deployment of Web App**, which presents how the project
+are **Server Setup and Deployment of Web App**, which presents how the project
 meets the basic Udacity requirements, and **Additional Functionalities**, 
 which describes the steps taken to exceed minimum specifications. Links to 
 third-party resources used are also included in this section. 
 
-#### Basic Setup and Deployment of Web App
+#### Server Setup and Deployment of Web App
 
 ##### 1. Access the development environment
 The Amazon AWS development environment is available to FSWD Nanodegree
