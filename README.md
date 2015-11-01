@@ -68,7 +68,7 @@ The steps to create a new user 'grader' that has sudo permission are:
 
 1. Create a new user:  
   `$ adduser grader`
-2. Open the sudo configuration file:
+2. Open the sudo configuration file:  
   `$ visudo`
 3. Edit the configuration file adding the following line below `root ALL...`:  
   `grader ALL=(ALL:ALL) ALL`
@@ -81,7 +81,7 @@ Sources: [Ask Ubuntu][6], [Digital Ocean][5]
 
 1. Generate a SSH key pair on the local machine:  
   `$ ssh-keygen`
-2. Confirm the file path and name for new key pair:
+2. Confirm the file path and name for new key pair:  
    For example `/Users/Udacity/.ssh/udacity`
 3. 
 
