@@ -20,7 +20,7 @@ The Udacity reviewer may log into the server as the 'grader' user
 at the public IP address 54.148.92.221 and using SSH port 2200. The
 key is provided in Notes for Reviewer below.
 
-ssh -i ~/.ssh/udacity grader@54.148.92.221 -p 2200
+SSH into the server as 'grader' with: ssh -i ~/.ssh/udacity grader@54.148.92.221 -p 2200
 
 ## Step by Step Installation
 This section outlines the different stages of installation. Its two parts
