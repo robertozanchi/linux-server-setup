@@ -51,9 +51,15 @@ time are:
 5. SSH into the instance:  
   `$ ssh -i ~/.ssh/udacity_key.rsa root@54.148.92.221` 
 
-Resources: [Udacity][3]
+Sources: [Udacity][3]
 
 #### 3. Create a new user named grader
+The steps to create a new user named grader are:
+
+1. 
+
+Sources: [Digital Ocean][4]
+
 
 ### Additional Functionalities
 
@@ -62,3 +68,4 @@ Resources: [Udacity][3]
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
 [3]: https://www.udacity.com/account#!/development_environment
+[4]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
