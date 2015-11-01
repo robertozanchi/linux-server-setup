@@ -67,7 +67,10 @@ The steps to create a new user 'grader' that has sudo permission are:
 
 Sources: [Ask Ubuntu][4], [Digital Ocean][5]
 
-##### 4.
+##### 4. Update all currently installed package
+The steps to update the packages installed on the server are:
+
+1. 
 
 #### Additional Functionalities
 
