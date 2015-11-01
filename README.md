@@ -53,8 +53,8 @@ time are:
 
 Sources: [Udacity][3]
 
-#### 3. Create new user 'grader'
-The steps to create a new user named grader are:
+#### 3. Create new user 'grader' with sudo permission
+The steps to create a new user 'grader' that has sudo permission are:
 
 1. 
 
