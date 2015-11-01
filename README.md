@@ -31,7 +31,7 @@ third-party resources used are also included in this section.
 
 ### Basic Setup and Deployment of Web App
 
-#### 1. Access to the development environment
+#### 1. Access the development environment
 The Amazon AWS development environment is available to Udacity Full Stack
 Development Nanodegree students through their [Udacity account][2].
 
