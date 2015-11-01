@@ -53,7 +53,7 @@ time are:
 
 Sources: [Udacity][3]
 
-#### 3. Create a new user named grader
+#### 3. Create new user 'grader'
 The steps to create a new user named grader are:
 
 1. 
