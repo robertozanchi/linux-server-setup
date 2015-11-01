@@ -3,9 +3,9 @@
 ## Project Overview
 This is project #5 of **Udacity's Full Stack Web Developer Nanodegree**.
 The main task is to configure a baseline installation of Ubuntu Linux
-on a virtual machine and use it host the [catalog application][1] 
-developed earlier in the course using the Flask framework. Udacity
-provided the Amazon AWS development environment for this project.
+on a virtual machine, and use it host a [Flask web application][1] 
+developed earlier in the course. Udacity provided the Amazon AWS development
+environment for this project.
 
 ## The Hosted Web Application
 
