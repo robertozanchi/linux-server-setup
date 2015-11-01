@@ -33,7 +33,7 @@ third-party resources used are also included in this section.
 
 #### 1. Access to the development environment
 The Amazon AWS development environment is available to Udacity Full Stack
-Development Nanodegree students as part of the [account][2].
+Development Nanodegree students through their [Udacity account][2].
 
 The public IP address of the virtual machine created and used in this project
 is 54.148.92.221.
