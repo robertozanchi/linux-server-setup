@@ -7,14 +7,14 @@ on a virtual machine, and use it host a [Flask web application][1]
 developed earlier in the course. Udacity provided the Amazon AWS development
 environment for this project.
 
-## The Hosted Web Application
+## Hosted Web Application
 
 The deployed web application can be accessed at
 http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/. 
 
 A web browser such as Google Chrome in "incognito" mode is recommended.
 
-## Log into the server
+## Server login
 
 The Udacity reviewer may log into the server as the 'grader' user
 at the public IP address 54.148.92.221 and using SSH port 2200. The
