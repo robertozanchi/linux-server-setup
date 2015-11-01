@@ -7,7 +7,7 @@ on a virtual machine, and use it host a [Flask web application][1]
 developed earlier in the course. Udacity provided the Amazon AWS development
 environment for this project.
 
-## Hosted Web Application
+## Web Application
 
 The deployed web application can be accessed at
 http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/. 
