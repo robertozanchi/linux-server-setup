@@ -74,6 +74,10 @@ The steps to create a new user 'grader' that has sudo permission are:
   `grader ALL=(ALL:ALL) ALL`
 4. Check that 'grader' was added by listing all users:    
   `$ cut -d: -f1 /etc/passwd`
+5. Enable password login in ssh config file to allow grader to log in: 
+   In `$ sudo nano /etc/ssh/sshd_config` set `PasswordAuthentication` to `yes`.
+6. To switch to grader user:
+  `$sudo su - grader`
 
 Sources: [Ask Ubuntu][6], [Digital Ocean][5]
 
