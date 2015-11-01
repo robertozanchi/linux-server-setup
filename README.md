@@ -56,9 +56,17 @@ Sources: [Udacity][3]
 #### 3. Create new user 'grader' with sudo permission
 The steps to create a new user 'grader' that has sudo permission are:
 
-1. 
+1. Create a new user:  
+  `$ adduser grader`
+2. Give new user the permission to sudo
+  1. Open the sudo configuration:  
+    `$ visudo`
+  2. Add the following line below `root ALL...`:  
+    `grader ALL=(ALL:ALL) ALL`
+  3. *List all users (Source: [Ask Ubuntu][4]):    
+    `$ cut -d: -f1 /etc/passwd`
 
-Sources: [Digital Ocean][4]
+Sources: [Digital Ocean][5]
 
 
 ### Additional Functionalities
@@ -70,4 +78,5 @@ Sources: [Digital Ocean][4]
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
 [3]: https://www.udacity.com/account#!/development_environment
-[4]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
+[4]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
+[5]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
