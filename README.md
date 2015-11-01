@@ -63,7 +63,7 @@ The steps to update the packages installed on the server are:
 
 Sources: [Ask Ubuntu][4]
 
-##### 3. Create new user 'grader' with sudo permission
+##### 4. Create new user 'grader' with sudo permission
 The steps to create a new user 'grader' that has sudo permission are:
 
 1. Create a new user:  
