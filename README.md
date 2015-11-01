@@ -58,16 +58,16 @@ The steps to create a new user 'grader' that has sudo permission are:
 
 1. Create a new user:  
   `$ adduser grader`
-2. Give new user the permission to sudo
-  1. Open the sudo configuration:  
-    `$ visudo`
-  2. Add the following line below `root ALL...`:  
-    `grader ALL=(ALL:ALL) ALL`
-  3. *List all users (Source: [Ask Ubuntu][4]):    
-    `$ cut -d: -f1 /etc/passwd`
+2. Open the sudo configuration file
+  `$ visudo`
+3. Edit the configuration file adding the following line below `root ALL...`:  
+  `grader ALL=(ALL:ALL) ALL`
+4. Check that 'grader' was added by listing all users:    
+  `$ cut -d: -f1 /etc/passwd`
 
-Sources: [Digital Ocean][5]
+Sources: [Ask Ubuntu][4], [Digital Ocean][5]
 
+##### 4.
 
 #### Additional Functionalities
 
