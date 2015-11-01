@@ -77,6 +77,12 @@ The steps to update the packages installed on the server are:
 
 Sources: [Ask Ubuntu][6]
 
+##### 5. Change the SSH port from 22 to 2200
+The steps to change SSH port to 2200 are:
+
+
+
+
 #### Additional Functionalities
 
 ### Resources
