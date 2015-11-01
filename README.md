@@ -12,7 +12,7 @@ environment for this project.
 The deployed web application can be accessed at
 http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/. 
 
-A web browser such as Google Chrome in "incognito" mode is recommended.
+The use of a web browser such as Google Chrome in "incognito" mode is recommended.
 
 ## Server login
 
