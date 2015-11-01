@@ -81,7 +81,9 @@ Sources: [Ask Ubuntu][6], [Digital Ocean][5]
 
 1. Generate a SSH key pair on the local machine:  
   `$ ssh-keygen`
-
+2. Confirm the file path and name for new key pair:
+   For example `/Users/Udacity/.ssh/udacity`
+3. 
 
 ##### 6. Change the SSH port from 22 to 2200 and disable root
 The steps to change SSH port to 2200 and disable root user are:
