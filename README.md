@@ -77,12 +77,14 @@ The steps to create a new user 'grader' that has sudo permission are:
 
 Sources: [Ask Ubuntu][6], [Digital Ocean][5]
 
+##### 5. Enable key based authentication for grader
+
+1. Generate a SSH key pair on the local machine:  
+  `$ ssh-keygen`
 
 
-##### 5. Change the SSH port from 22 to 2200
-
-##### 5. Change the SSH port from 22 to 2200
-The steps to change SSH port to 2200 are:
+##### 6. Change the SSH port from 22 to 2200 and disable root
+The steps to change SSH port to 2200 and disable root user are:
 
 
 
