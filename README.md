@@ -1,7 +1,7 @@
 # Linux Server Setup
 
 ## Project Overview
-This is project #5 of Udacity's Full Stack Web Developer Nanodegree.
+This is project #5 of **Udacity's Full Stack Web Developer Nanodegree**.
 The main task is to configure a baseline installation of Ubuntu Linux
 on a virtual machine and use it host the [catalog application][1] 
 developed earlier in the course using the Flask framework. Udacity
