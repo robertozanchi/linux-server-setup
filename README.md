@@ -79,7 +79,7 @@ The steps to create a new user 'grader' that has sudo permission are:
 6. To switch to grader user:
   `$sudo su - grader`
 
-Sources: [Ask Ubuntu][6], [Digital Ocean][5]
+Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
 
 ##### 5. Enable key based authentication for grader
 
@@ -109,4 +109,5 @@ The steps to change SSH port to 2200 and disable root user are:
 [3]: https://www.udacity.com/account#!/development_environment
 [4]: http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade "What is the difference between apt-get update and upgrade?"
 [5]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
-[4]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
+[6]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
+[7]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
