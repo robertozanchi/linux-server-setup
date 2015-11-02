@@ -99,7 +99,7 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
   `$ chmod 644 .ssh/authorized_keys `
 
 ##### 6. Change the SSH port and disable root user
-The steps to change SSH port to 2200 and disable root user are:
+The steps to change SSH port to 2200 and disable root user access are:
 
 1. Open the SSH config file:   
   `$ sudo nano /etc/ssh/sshd_config`
@@ -110,10 +110,10 @@ The steps to change SSH port to 2200 and disable root user are:
 4. Disable password authentication:    
    `PasswordAuthentication no`
 5. Add the following lines, exit and save:    
-  `UseDNS no`
-  `AllowUsers grader`
+  `UseDNS no`   
+  `AllowUsers grader`   
 6. Restart SSH:    
-   `service ssh restart`
+   `service ssh restart`    
 
 ##### 7. 
 
