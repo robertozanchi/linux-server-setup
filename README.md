@@ -333,14 +333,15 @@ Sources: [Trackets Blog][15], [Super User][16]
 
 ###### 2. set up your Flask web app
 1. Open the database setup file:   
-`$ sudo vim database_setup.py`
+`$ sudo nano database_setup.py`
 2 Edit the line starting with "engine" and fill in psql password for 'catalog' user:
 `engine = create_engine('postgresql://catalog:password@localhost/catalog')`
 3. Make the same change in `application.py`
-4. 
-2. Restart Apache:
+4. Replace sample Flask app's `__init__.py` with `application.py`:   
+`$ mv application.py __init__.py`
+5. Restart Apache:
 `$ sudo service apache2 restart`
-3. Visit public IP in web browser to check that app is running.
+6. Visit public IP in web browser to check that app is running.
 
 Sources: [GitHub][17], [Stackoverflow][18]
 
