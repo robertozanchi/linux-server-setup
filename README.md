@@ -165,7 +165,7 @@ Source: [Udacity blog][12]
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
 
-
+##### 12. Install git, clone and set up your Catalog App project
 
 #### Additional Functionalities
 
