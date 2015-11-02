@@ -362,6 +362,8 @@ Sources: [Trackets Blog][15], [Super User][16]
   2. Navigate to APIs & auth > Credentials > Edit Settings
   3. Add hostname to Authorized JavaScript origins and hostname/oauth2callback to Authorized redirect URIs:
   `http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/oauth2callback`
+6. Restart Apache:   
+`$ sudo service apache2 restart`
 
 Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]  
 
