@@ -164,44 +164,33 @@ This step entails installing mod_wsgi (if not previously installed),
 creating
 
 ###### 1. Install and Enable mod_wsgi
-1. Install mod_wsgi:     
-   `$ sudo apt-get install libapache2-mod-wsgi python-dev`
-2. Enable mod_wsgi:    
-   `sudo a2enmod wsgi`
+  1. Install mod_wsgi:     
+     `$ sudo apt-get install libapache2-mod-wsgi python-dev`
+  2. Enable mod_wsgi:    
+     `sudo a2enmod wsgi`
 
 ###### 2. Creating a Flask App
-1. Move to the /var/www directory:   
-   `$ cd /var/www`
-2. Create catalog directory and move inside it:    
-   `$ sudo mkdir catalog`
-   `$ cd catalog`
-3. Within catalog, create another catalog directory and move inside it:   
-   `$ sudo mkdir catalog`
-   `$ cd catalog`
-4. Create two subdirectories named static and templates:   
-   `$ sudo mkdir static templates`
-5. The structure within `/var/www` should be the following:   
-|----catalog   
-|---------catalog   
-|--------------static   
-|--------------templates   
-6. Create the `__init__.py` file that will contain the flask application:
-   `$ sudo nano __init__.py`
-7. Open `__init__.py`, add the code from step 8, exit and save:   
-   `$ sudo nano __init__.py`  
-8. Paste in the following code:   
-  ```python  
-    from flask import Flask  
-    app = Flask(__name__)  
-    @app.route("/")  
-    def hello():  
-      return "Veni vidi vici!!"  
-    if __name__ == "__main__":  
-      app.run()  
-  ```  
-  
-  
-      ```python  
+  1. Move to the /var/www directory:   
+     `$ cd /var/www`
+  2. Create catalog directory and move inside it:    
+     `$ sudo mkdir catalog`
+     `$ cd catalog`
+  3. Within catalog, create another catalog directory and move inside it:   
+     `$ sudo mkdir catalog`
+     `$ cd catalog`
+  4. Create two subdirectories named static and templates:   
+     `$ sudo mkdir static templates`
+  5. The structure within `/var/www` should be the following:   
+  |----catalog   
+  |---------catalog   
+  |--------------static   
+  |--------------templates   
+  6. Create the `__init__.py` file that will contain the flask application:
+     `$ sudo nano __init__.py`
+  7. Open `__init__.py`, add the code from step 8, exit and save:   
+     `$ sudo nano __init__.py`  
+  8. Paste in the following code:   
+    ```python  
       from flask import Flask  
       app = Flask(__name__)  
       @app.route("/")  
@@ -210,6 +199,7 @@ creating
       if __name__ == "__main__":  
         app.run()  
     ```  
+
   
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
