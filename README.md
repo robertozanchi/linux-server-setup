@@ -344,3 +344,4 @@ Sources: [GitHub][17]
 [14]: https://github.com/stueken/FSND-P5_Linux-Server-Configuration/blob/master/README.md
 [15]: http://blog.trackets.com/2013/08/19/postgresql-basics-by-example.html "PostgreSQL Basics by Example"
 [16]: http://superuser.com/questions/769749/creating-user-with-password-or-changing-password-doesnt-work-in-postgresql
+[17]: https://help.github.com/articles/set-up-git/#platform-linux "Set Up Git for Linux"
