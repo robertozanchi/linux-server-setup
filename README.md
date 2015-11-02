@@ -98,6 +98,8 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
   `$ chmod 700 .ssh`
   `$ chmod 644 .ssh/authorized_keys `
 
+Source: [Udacity][8]
+
 ##### 6. Change the SSH port to 2200 and disable root user
 The steps to change SSH port to 2200 and disable root user access are:
 
@@ -115,11 +117,13 @@ The steps to change SSH port to 2200 and disable root user access are:
 6. Restart SSH:    
    `service ssh restart`    
 
+Source: [Ask Ubuntu][9]
+
 ##### 7. Configure the Uncomplicated Firewall (UFW)
 The steps to configure the Uncomplicated Firewall (UFW) to only allow incoming
 connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 
-
+Source: [Digital Ocean][10]
 
 
 #### Additional Functionalities
@@ -132,3 +136,6 @@ connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 [5]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
 [6]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
 [7]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
+[8]: https://www.udacity.com/course/viewer#!/c-ud299-nd/l-4331066009/m-4801089481
+[9]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
+[10]: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
