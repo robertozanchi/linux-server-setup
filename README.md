@@ -215,11 +215,11 @@ creating
   6. Test if the app is running after running:
     `$ sudo python __init__.py`
   7. Deactivate the environment:   
-   `$ deactivate`
+    `$ deactivate`
 
 ###### 4. Configure and Enable a New Virtual Host
   1. Issue the following command to create catalog.conf:     
-     `sudo nano /etc/apache2/sites-available/catalog.conf`
+     `$ sudo nano /etc/apache2/sites-available/catalog.conf`
   2. Paste in the following lines of code (customize public IP and folders):        
 
   ```
@@ -241,6 +241,11 @@ creating
         CustomLog ${APACHE_LOG_DIR}/access.log combined
     </VirtualHost>
   ```
+  3. Enable the virtual host:     
+  `$ sudo a2ensite catalog`
+
+###### 4. Create the .wsgi file
+
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
