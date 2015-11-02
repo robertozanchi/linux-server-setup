@@ -68,7 +68,7 @@ The steps to configure the timezone are:
    `$ sudo dpkg-reconfigure tzdata`
 2. Select:   
   `Geographic area: None of the above`    
-3 Select:   
+3. Select:   
   `UTC`
 
 Source: [Digital Ocean][5]
