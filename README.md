@@ -295,7 +295,7 @@ The steps to install and configure PostgreSQL are:
 `$ psql`
 6. Add postgre user with password:  
   1. Create user with LOGIN role and set a password:  
-    `# CREATE USER catalog WITH PASSWORD 'PW-FOR-DB';` (# stands for the command prompt in psql)
+    `# CREATE USER catalog WITH PASSWORD 'password';` (# stands for the command prompt in psql)
   2. Allow the user to create database tables:  
     `# ALTER USER catalog CREATEDB;`
   3. *List current roles and their attributes:
@@ -311,7 +311,7 @@ The steps to install and configure PostgreSQL are:
 11. Exit out of PostgreSQl and the postgres user:  
   `# \q`, then `$ exit` 
 
-Sources: [Trackets Blog][25] and [Super User][26]
+Sources: [Trackets Blog][15], [Super User][16]
 
 ##### 12. Install git, clone and set up your Catalog App project
 
@@ -332,4 +332,5 @@ Sources: [Trackets Blog][25] and [Super User][26]
 [12]: http://blog.udacity.com/2015/03/step-by-step-guide-install-lamp-linux-apache-mysql-python-ubuntu.html
 [13]: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 [14]: https://github.com/stueken/FSND-P5_Linux-Server-Configuration/blob/master/README.md
-
+[15]: http://blog.trackets.com/2013/08/19/postgresql-basics-by-example.html "PostgreSQL Basics by Example"
+[16]: http://superuser.com/questions/769749/creating-user-with-password-or-changing-password-doesnt-work-in-postgresql
