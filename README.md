@@ -262,6 +262,9 @@ creating
   3. Restart Apache:    
   `$ sudo service apache2 restart`
 
+###### 5. Update  
+
+Sources: [Digital Ocean][13], 
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
@@ -283,3 +286,5 @@ The steps to install and configure PostgreSQL are:
 [10]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
 [11]: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
 [12]: http://blog.udacity.com/2015/03/step-by-step-guide-install-lamp-linux-apache-mysql-python-ubuntu.html
+[13]: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+[14]: 
