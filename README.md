@@ -96,19 +96,19 @@ Sources: [Ask Ubuntu][7], [Ask Ubuntu][8], [Digital Ocean][6]
 1. Generate a SSH key pair on the local machine:  
 `$ ssh-keygen`
 2. Confirm the file path and name for new key pair:  
-   For example `$ /Users/Udacity/.ssh/udacity`
+For example `$ /Users/Udacity/.ssh/udacity`
 3. Optionally, enter a passphrase for the new key pair
 4. Log in as grader and create .ssh directory in home directory:  
-   `$ mkdir .ssh`
+`$ mkdir .ssh`
 5. Create `authorized_keys` to store all public keys used by grader:   
-   `$ touch .ssh/authorized_keys`
+`$ touch .ssh/authorized_keys`
 6. On the local machine open udacity.pub and copy its contents:  
-   `$ sudo cat .ssh/udacity.pub`
+`$ sudo cat .ssh/udacity.pub`
 7. Paste the copied key into grader's `authorized_keys` file:  
-   `$ sudo nano authorized_keys`
+`$ sudo nano authorized_keys`
 8. Set permissions on `.ssh` directory and `authorized_keys` file:   
-  `$ chmod 700 .ssh`
-  `$ chmod 644 .ssh/authorized_keys `
+ `$ chmod 700 .ssh`
+ `$ chmod 644 .ssh/authorized_keys `
 
 Source: [Udacity][9]
 
@@ -116,18 +116,18 @@ Source: [Udacity][9]
 The steps to change SSH port to 2200 and disable root user access are:
 
 1. Open the SSH config file:   
-  `$ sudo nano /etc/ssh/sshd_config`
+ `$ sudo nano /etc/ssh/sshd_config`
 2. Change port value from 22 to 2200    
-  `Port 2200`
+ `Port 2200`
 3. Disable root user access:    
-   `PermitRootLogin no`
+`PermitRootLogin no`
 4. Disable password authentication:    
-   `PasswordAuthentication no`
+`PasswordAuthentication no`
 5. Add the following lines, exit and save:    
-  `UseDNS no`   
-  `AllowUsers grader`   
+`UseDNS no`   
+`AllowUsers grader`   
 6. Restart SSH:    
-   `service ssh restart`    
+`service ssh restart`    
 
 Source: [Ask Ubuntu][10]
 
@@ -136,13 +136,13 @@ The steps to configure the Uncomplicated Firewall (UFW) to only allow incoming
 connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 
 1. Turn on UFW:    
-   `$ sudo ufw enable`
+`$ sudo ufw enable`
 2. Allow incoming TCP packets on port 2200 (SSH):   
-   `$ sudo ufw allow 2200/tcp`
+`$ sudo ufw allow 2200/tcp`
 3. Allow incoming TCP packets on port 80 (HTTP):    
-   `$ sudo ufw allow 80/tcp`
+`$ sudo ufw allow 80/tcp`
 4. Allow incoming UDP packets on port 123 (NTP):    
-   `$ sudo ufw allow 123/udp`
+`$ sudo ufw allow 123/udp`
 
 Source: [Digital Ocean][11]
 
@@ -150,12 +150,12 @@ Source: [Digital Ocean][11]
 The steps to install and configure Apache to serve a Python mod_wsgi application are:
 
 1. Install Apache:   
-   `$ sudo apt-get install apache2`
+`$ sudo apt-get install apache2`
 2. Open browser and visit public IP address to load "It works!" page
 3. Install **mod_wsgi** tool and helper package **python-setuptools**:    
-   `$ sudo apt-get install python-setuptools libapache2-mod-wsgi`
+`$ sudo apt-get install python-setuptools libapache2-mod-wsgi`
 4. Restart Apache server:   
-   `$ sudo service apache2 restart`
+`$ sudo service apache2 restart`
 
 Source: [Udacity blog][12]
 
@@ -164,10 +164,10 @@ This step entails installing mod_wsgi (if not previously installed),
 creating
 
 ###### 1. Install and Enable mod_wsgi
-  1. Install mod_wsgi:     
-     `$ sudo apt-get install libapache2-mod-wsgi python-dev`
-  2. Enable mod_wsgi:    
-     `sudo a2enmod wsgi`
+1. Install mod_wsgi:     
+`$ sudo apt-get install libapache2-mod-wsgi python-dev`
+2. Enable mod_wsgi:    
+`sudo a2enmod wsgi`
 
 ###### 2. Creating a Flask App
   1. Move to the /var/www directory:   
