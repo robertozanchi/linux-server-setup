@@ -220,7 +220,8 @@ creating
 ###### 4. Configure and Enable a New Virtual Host
   1. Issue the following command to create catalog.conf:     
      `sudo nano /etc/apache2/sites-available/catalog.conf`
-  2. Paste in the following lines of code and change names and addresses regarding your application:  
+  2. Paste in the following lines of code and change names and addresses regarding your application:    
+
   ```
     <VirtualHost *:80>
         ServerName 54.148.92.221
