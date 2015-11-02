@@ -102,9 +102,10 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
 The steps to change SSH port to 2200 and disable root user are:
 
 1. Open the SSH config file:   
-   `$ sudo nano /etc/ssh/sshd_config`
-2. Change port value to `Port 2200`
-3. 
+  `$ sudo nano /etc/ssh/sshd_config`
+2. Change port value from 22 to 2200    
+  `Port 2200`
+3.  
 
 
 #### Additional Functionalities
