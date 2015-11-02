@@ -181,10 +181,10 @@ creating
 4. Create two subdirectories named static and templates:   
    `$ sudo mkdir static templates`
 5. The structure should be the following:   
-|----catalog
-|---------catalog
-|--------------static
-|--------------templates
+|----catalog   
+|---------catalog   
+|--------------static   
+|--------------templates   
 6. Create the __init__.py file that will contain the flask application:
    `$ sudo nano __init__.py`
 7. 
