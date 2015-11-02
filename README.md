@@ -123,6 +123,15 @@ Source: [Ask Ubuntu][9]
 The steps to configure the Uncomplicated Firewall (UFW) to only allow incoming
 connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 
+1. Turn on UFW:    
+   `$ sudo ufw enable`
+2. Allow incoming TCP packets on port 2200 (SSH):   
+   `$ sudo ufw allow 2200/tcp`
+3. Allow incoming TCP packets on port 80 (HTTP):    
+   `$ sudo ufw allow 80/tcp`
+4. Allow incoming UDP packets on port 123 (NTP):    
+   `$ sudo ufw allow 123/udp`
+
 Source: [Digital Ocean][10]
 
 
