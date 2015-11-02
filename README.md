@@ -161,6 +161,8 @@ Source: [Udacity blog][12]
 
 ##### 10. Install Flask and deploy a sample application
 
+###### 1. Install and Enable mod_wsgi
+
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
