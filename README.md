@@ -180,7 +180,7 @@ creating
    `$ cd catalog`
 4. Create two subdirectories named static and templates:   
    `$ sudo mkdir static templates`
-5. The structure should be the following:   
+5. The structure within `/var/www` should be the following:   
 |----catalog   
 |---------catalog   
 |--------------static   
