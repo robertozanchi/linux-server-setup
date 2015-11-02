@@ -339,9 +339,11 @@ Sources: [Trackets Blog][15], [Super User][16]
 3. Make the same change in `application.py`
 4. Replace sample Flask app's `__init__.py` with `application.py`:   
 `$ mv application.py __init__.py`
-5. Restart Apache:
+5. Create postgreSQL database schema:
+`$ python database_setup.py`
+6. Restart Apache:
 `$ sudo service apache2 restart`
-6. Visit public IP in web browser to check that app is running.
+7. Visit public IP in web browser to check that app is running.
 
 Sources: [GitHub][17], [Stackoverflow][18]
 
