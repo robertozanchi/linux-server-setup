@@ -291,7 +291,9 @@ The steps to install and configure PostgreSQL are:
 3. Open the database setup file:   
 `$ sudo nano database_setup.py`
 4. Edit the line starting with "engine" with a password of choice:
-`engine = create_engine('postgresql://catalog:**password**@localhost/catalog')`
+`engine = create_engine('postgresql://catalog:password@localhost/catalog')`
+
+
 
 ##### 12. Install git, clone and set up your Catalog App project
 
