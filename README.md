@@ -316,7 +316,14 @@ Sources: [Trackets Blog][15], [Super User][16]
 ##### 12. Install git, clone and set up your Catalog App project
 
 ###### 1. Install git and clone repository
+1. Install Git:  
+`$ sudo apt-get install git`
+2. Set your name, e.g. for the commits:  
+`$ git config --global user.name "username"`
+3. Set up your email address to connect your commits to your account:  
+`$ git config --global user.email "me@email.com"`
 
+Sources: [GitHub][17]
 
 #### Additional Functionalities
 
