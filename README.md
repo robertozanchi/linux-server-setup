@@ -324,14 +324,14 @@ Sources: [Trackets Blog][15], [Super User][16]
 `$ git config --global user.email "me@email.com"`
 4. Clone app repository from GitHub:  
   `$ git clone https://github.com/username/app.git`
-5. Move all content of cloned repository `/var/www/catalog/catalog/` delete the empty directory
+5. Move all content of cloned repository into `/var/www/catalog/catalog/`and delete the empty directory
 6. Make the repository inaccessible:  
   1. Create and open .htaccess file:  
     `$ cd /var/www/catalog/` and `$ sudo nano .htaccess` 
   2. Paste in the following:  
     `RedirectMatch 404 /\.git`
 
-###### 2. set up your Flask web app
+###### 2. Set up Flask web app
 1. Open the database setup file:   
 `$ sudo nano database_setup.py`
 2 Edit the line starting with "engine" and fill in psql password for 'catalog' user:
@@ -344,6 +344,9 @@ Sources: [Trackets Blog][15], [Super User][16]
 6. Restart Apache:
 `$ sudo service apache2 restart`
 7. Visit public IP in web browser to check that app is running.
+
+###### 3. Enable OAuth logins
+1. 
 
 Sources: [GitHub][17], [Stackoverflow][18]
 
