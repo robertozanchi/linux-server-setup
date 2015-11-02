@@ -240,26 +240,25 @@ if __name__ == "__main__":
       CustomLog ${APACHE_LOG_DIR}/access.log combined
   </VirtualHost>
 ```
-  3. Enable the virtual host:     
-  `$ sudo a2ensite catalog`
+3. Enable the virtual host:     
+`$ sudo a2ensite catalog`
 
 ###### 4. Create the .wsgi file
-  1. Create a file named catalog.wsgi:   
-  `$ sudo nano /var/www/catalog.wsgi`
-  2. Add the following lines of code:    
-
-  ```
-  #!/usr/bin/python
-  import sys
-  import logging
-  logging.basicConfig(stream=sys.stderr)
-  sys.path.insert(0,"/var/www/catalog/")
-  
-  from catalog import app as application
-  application.secret_key = 'Add your secret key'`
-  ```
-  3. Restart Apache:    
-  `$ sudo service apache2 restart`
+1. Create a file named catalog.wsgi:   
+`$ sudo nano /var/www/catalog.wsgi`
+2. Add the following lines of code:    
+ ```
+ #!/usr/bin/python
+ import sys
+ import logging
+ logging.basicConfig(stream=sys.stderr)
+ sys.path.insert(0,"/var/www/catalog/")
+ 
+ from catalog import app as application
+ application.secret_key = 'Add your secret key'`
+ ```
+3. Restart Apache:    
+`$ sudo service apache2 restart`
 
 ###### 5. Install modules and packages  
 1. Activate virtual environment:   
