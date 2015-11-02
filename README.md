@@ -146,6 +146,10 @@ connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 
 Source: [Digital Ocean][11]
 
+##### 9. Install and configure Apache to serve a Python mod_wsgi application
+The steps to install and configure Apache to serve a Python mod_wsgi application are:
+
+
 
 #### Additional Functionalities
 
