@@ -199,7 +199,7 @@ creating
       if __name__ == "__main__":  
         app.run()  
     ```  
-
+9. v
   
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
