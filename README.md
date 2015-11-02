@@ -49,7 +49,7 @@ time are:
 5. SSH into the instance:  
   `$ ssh -i ~/.ssh/udacity_key.rsa root@54.148.92.221` 
 
-Sources: [Udacity][3]
+Source: [Udacity][3]
 
 ##### 3. Update all currently installed packages
 The steps to update the packages installed on the server are:
@@ -61,7 +61,19 @@ The steps to update the packages installed on the server are:
 
 Sources: [Ask Ubuntu][4]
 
-##### 4. Create new user 'grader' with sudo permission
+##### 4.Configure the local timezone to UTC.
+The steps to configure the timezone are:
+
+1. Open timezone selection:    
+   `$ sudo dpkg-reconfigure tzdata`
+2. Select:   
+  `Geographic area: None of the above`
+3 Select:   
+  `UTC`
+
+Source: [Digital Ocean][5]
+
+##### 5. Create new user 'grader' with sudo permission
 The steps to create a new user 'grader' that has sudo permission are:
 
 1. Create a new user:  
@@ -77,9 +89,9 @@ The steps to create a new user 'grader' that has sudo permission are:
 6. To switch to grader user:
   `$sudo su - grader`
 
-Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
+Sources: [Ask Ubuntu][7], [Ask Ubuntu][8], [Digital Ocean][6]
 
-##### 5. Enable key based authentication for grader
+##### 6. Enable key based authentication for grader
 
 1. Generate a SSH key pair on the local machine:  
   `$ ssh-keygen`
@@ -98,9 +110,9 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
   `$ chmod 700 .ssh`
   `$ chmod 644 .ssh/authorized_keys `
 
-Source: [Udacity][8]
+Source: [Udacity][9]
 
-##### 6. Change the SSH port to 2200 and disable root user
+##### 7. Change the SSH port to 2200 and disable root user
 The steps to change SSH port to 2200 and disable root user access are:
 
 1. Open the SSH config file:   
@@ -117,9 +129,9 @@ The steps to change SSH port to 2200 and disable root user access are:
 6. Restart SSH:    
    `service ssh restart`    
 
-Source: [Ask Ubuntu][9]
+Source: [Ask Ubuntu][10]
 
-##### 7. Configure the Uncomplicated Firewall (UFW)
+##### 8. Configure the Uncomplicated Firewall (UFW)
 The steps to configure the Uncomplicated Firewall (UFW) to only allow incoming
 connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 
@@ -132,7 +144,7 @@ connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
 4. Allow incoming UDP packets on port 123 (NTP):    
    `$ sudo ufw allow 123/udp`
 
-Source: [Digital Ocean][10]
+Source: [Digital Ocean][11]
 
 
 #### Additional Functionalities
@@ -142,9 +154,10 @@ Source: [Digital Ocean][10]
 [2]: https://www.udacity.com/account#!/development_environment
 [3]: https://www.udacity.com/account#!/development_environment
 [4]: http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade "What is the difference between apt-get update and upgrade?"
-[5]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
-[6]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
-[7]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
-[8]: https://www.udacity.com/course/viewer#!/c-ud299-nd/l-4331066009/m-4801089481
-[9]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
-[10]: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
+[5]: https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers
+[6]: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
+[7]: http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users "How to list, add, delete and modify users"
+[8]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
+[9]: https://www.udacity.com/course/viewer#!/c-ud299-nd/l-4331066009/m-4801089481
+[10]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
+[11]: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
