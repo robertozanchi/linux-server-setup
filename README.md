@@ -17,7 +17,8 @@ The use of a web browser such as Google Chrome in "incognito" mode is recommende
 ### Server Login
 
 The server can be accessed as the new user 'grader'at the public IP address 54.148.92.221
-and using SSH port 2200 with: ssh -i ~/.ssh/udacity grader@54.148.92.221 -p 2200.
+and using SSH port 2200 with `ssh -i ~/.ssh/udacity grader@54.148.92.221 -p 2200`, where
+`~/.ssh/udacity` is the location of the public key.
 
 ### Step by Step Installation
 This section outlines the different stages of installation. Its two parts
