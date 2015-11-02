@@ -208,7 +208,17 @@ creating
      `$ sudo pip install virtualenv`
   3. Create virtual environment 'venv':    
      `$ sudo virtualenv venv`
+  4. Activate virtual environment:    
+    `$ source venv/bin/activate`
+  5. Install Flask within virtual environment:    
+    `$ sudo pip install Flask`
+  6. Test if the app is running after running:
+    `$ sudo python __init__.py`
+  7. Deactivate the environment:   
+   `$ deactivate`
 
+###### 4. Configure and Enable a New Virtual Host
+  1. 
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
