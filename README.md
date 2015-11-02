@@ -283,16 +283,17 @@ Sources: [Digital Ocean][13], [github.com/stueken][14]
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
 
-###### 1. Install and configure PostgreSQL
 1. Install PostgreSQL:   
 `$ sudo apt-get install postgresql postgresql-contrib`
 2. Ensure that no remote connections are allowed:    
 `$ sudo nano /etc/postgresql/9.3/main/pg_hba.conf`
-3. Open the database setup file:   
-`$ sudo nano database_setup.py`
-4. Edit the line starting with "engine" with a password of choice:
-`engine = create_engine('postgresql://catalog:password@localhost/catalog')`
-
+3. Create a linux user named 'catalog' for psql:   
+`$ sudo adduser catalog` (choose a password)
+4. Switch to default user postgres:   
+`$ sudo su - postgre`
+5. Connect to the psql system:   
+`$ psql`
+6. 
 
 
 ##### 12. Install git, clone and set up your Catalog App project
