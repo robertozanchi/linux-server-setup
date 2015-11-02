@@ -190,7 +190,7 @@ creating
   7. Open `__init__.py`, add the code from step 8, exit and save:   
      `$ sudo nano __init__.py`  
   8. Paste in the following code:        
-    ```python  
+    ````python  
       from flask import Flask  
       app = Flask(__name__)  
       @app.route("/")  
@@ -198,7 +198,7 @@ creating
         return "Hello, Udacity!"  
       if __name__ == "__main__":  
         app.run()  
-    ```  
+    ````
 
 ###### 3. Install Flask
   
