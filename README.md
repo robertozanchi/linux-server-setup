@@ -187,15 +187,18 @@ creating
 |--------------templates   
 6. Create the `__init__.py` file that will contain the flask application:
    `$ sudo nano __init__.py`
-7. Open `__init__.py` and add the code below:   
-   `$ `   
-   `from flask import Flask`   
-    `app = Flask(__name__)`   
-    `@app.route("/")`    
-    `def hello():`   
-    `    return "Hello, Udacity!"`   
-    `if __name__ == "__main__":`   
-    `    app.run()`   
+7. Open `__init__.py`, add the code from step 8, exit and save:   
+   `$ sudo nano __init__.py`    
+8. Paste in the following code:  
+  ```python  
+    from flask import Flask  
+    app = Flask(__name__)  
+    @app.route("/")  
+    def hello():  
+      return "Veni vidi vici!!"  
+    if __name__ == "__main__":  
+      app.run()  
+  ```  
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
