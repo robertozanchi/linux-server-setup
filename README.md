@@ -404,12 +404,12 @@ Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]
 Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
 
 ##### 2. Install Monitor applications Glances and Monitorix
-1. Install Glances: 
+1. Install Glances:   
 `$ sudo apt-get install python-pip build-essential python-dev`   
 `$ sudo pip install Glances`   
 `$ sudo pip install PySensors`
 
-2. Install Monitorix:
+2. Install Monitorix:   
 `sudo add-apt-repository ppa:upubuntu-com/ppa`   
 `sudo apt-get update`   
 `sudo apt-get install monitorix`   
