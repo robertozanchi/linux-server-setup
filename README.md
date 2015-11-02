@@ -43,11 +43,11 @@ time are:
 1. Note public IP address of virtual machine: 54.148.92.221.
 2. Download private key provided by Udacity.
 3. Move the private key file into the folder ~/.ssh:  
-  `$ mv ~/Downloads/udacity_key.rsa ~/.ssh/`
+`$ mv ~/Downloads/udacity_key.rsa ~/.ssh/`
 4. Set file rights (only owner can write and read.):  
-  `$ chmod 600 ~/.ssh/udacity_key.rsa`
+`$ chmod 600 ~/.ssh/udacity_key.rsa`
 5. SSH into the instance:  
-  `$ ssh -i ~/.ssh/udacity_key.rsa root@54.148.92.221` 
+`$ ssh -i ~/.ssh/udacity_key.rsa root@54.148.92.221` 
 
 Source: [Udacity][3]
 
@@ -55,9 +55,9 @@ Source: [Udacity][3]
 The steps to update the packages installed on the server are:
 
 1. Update the list of available packages and their versions:  
-  `$ sudo apt-get update`
+`$ sudo apt-get update`
 2. Install newer vesions of packages you have:  
-  `$ sudo sudo apt-get upgrade`
+`$ sudo sudo apt-get upgrade`
 
 Sources: [Ask Ubuntu][4]
 
@@ -65,11 +65,11 @@ Sources: [Ask Ubuntu][4]
 The steps to configure the timezone are:
 
 1. Open timezone selection:    
-   `$ sudo dpkg-reconfigure tzdata`
+`$ sudo dpkg-reconfigure tzdata`
 2. Select:   
-  `Geographic area: None of the above`    
+`Geographic area: None of the above`    
 3. Select:   
-  `UTC`
+`UTC`
 
 Source: [Digital Ocean][5]
 
@@ -77,24 +77,24 @@ Source: [Digital Ocean][5]
 The steps to create a new user 'grader' that has sudo permission are:
 
 1. Create a new user:  
-  `$ adduser grader`
+`$ adduser grader`
 2. Open the sudo configuration file:  
-  `$ visudo`
+`$ visudo`
 3. Edit the configuration file adding the following line below `root ALL...`:  
-  `grader ALL=(ALL:ALL) ALL`
+`grader ALL=(ALL:ALL) ALL`
 4. Check that 'grader' was added by listing all users:    
-  `$ cut -d: -f1 /etc/passwd`
+`$ cut -d: -f1 /etc/passwd`
 5. Enable password login in ssh config file to allow grader to log in:   
-   In `$ sudo nano /etc/ssh/sshd_config` set `PasswordAuthentication` to `yes`.
+In `$ sudo nano /etc/ssh/sshd_config` set `PasswordAuthentication` to `yes`.
 6. To switch to grader user:
-  `$sudo su - grader`
+`$sudo su - grader`
 
 Sources: [Ask Ubuntu][7], [Ask Ubuntu][8], [Digital Ocean][6]
 
 ##### 6. Enable key based authentication for grader
 
 1. Generate a SSH key pair on the local machine:  
-  `$ ssh-keygen`
+`$ ssh-keygen`
 2. Confirm the file path and name for new key pair:  
    For example `$ /Users/Udacity/.ssh/udacity`
 3. Optionally, enter a passphrase for the new key pair
@@ -262,7 +262,23 @@ creating
   3. Restart Apache:    
   `$ sudo service apache2 restart`
 
-###### 5. Update  
+###### 5. Install modules and packages  
+  1. Activate virtual environment:   
+    `$ source venv/bin/activate`
+  2. Install httplib2 module in venv:   
+    `$ pip install httplib2`
+  3. Install requests module in venv:   
+    `$ pip install requests`
+  4. *Install flask.ext.seasurf (only seems to work when installed globally):   
+    `$ *sudo pip install flask-seasurf`
+  5. Install oauth2client.client:   
+    `$ sudo pip install --upgrade oauth2client`
+  6. Install SQLAlchemy:   
+    `$ sudo pip install sqlalchemy`
+  7. Install the Python PostgreSQL adapter psycopg:   
+    `$ sudo apt-get install python-psycopg2`
+  8. Deactivate the environment:   
+    `$ deactivate`
 
 Sources: [Digital Ocean][13], 
 
