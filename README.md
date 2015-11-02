@@ -159,7 +159,10 @@ The steps to install and configure Apache to serve a Python mod_wsgi application
 
 Source: [Udacity blog][12]
 
-##### 10. Install and configure PostgreSQL
+##### 10. Install Flask and deploy a sample application
+
+
+##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
 
 
