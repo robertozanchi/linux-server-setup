@@ -259,6 +259,9 @@ creating
   from catalog import app as application
   application.secret_key = 'Add your secret key'`
   ```
+  3. Restart Apache:    
+  `$ sudo service apache2 restart`
+
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
