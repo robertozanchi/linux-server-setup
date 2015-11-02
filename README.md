@@ -369,6 +369,44 @@ Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]
 
 #### Additional Functionalities
 
+##### 1. Configure Firewall to monitor for repeated unsuccessful login attempts and ban attackers
+
+1. Install Fail2ban:  
+  `$ sudo apt-get install fail2ban`
+2. Copy the default config file:  
+  `$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`
+3. Check and change the default parameters:  
+    1. Open the local config file:  
+      `$ sudo vim /etc/fail2ban/jail.local`
+    2. Set the following Parameters:  
+    ```  
+      set bantime  = 1800  
+      destemail = YOURNAME@DOMAIN  
+      action = %(action_mwl)s  
+      under [ssh] change port = 2220  
+    ```  
+    
+  **Note:** In the next three steps *iptables* is installed. However, the before installed UFW [is actually a frontend for iptables](https://wiki.ubuntu.com/UncomplicatedFirewall) and is set up already. So configuring *iptables* separately (as I did by just following the guide at DigitalOcean) would be a redundant step. So just install *sendmail* and go on with step 7.
+
+4. Install needed software for our configuration:  
+  `$ sudo apt-get install sendmail iptables-persistent` 
+5. Set up a basic firewall only allowing connections from the above ports:  
+  `$ sudo iptables -A INPUT -i lo -j ACCEPT`  
+  `$ sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT`  
+  `$ sudo iptables -A INPUT -p tcp --dport 2200 -j ACCEPT`  
+  `$ sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT`  
+  `$ sudo iptables -A INPUT -p udp --dport 123 -j ACCEPT`  
+  `$ sudo iptables -A INPUT -j DROP`  
+6. *Check the current firewall rules:  
+  `$ sudo iptables -S`
+7. Stop the service:  
+  `$ sudo service fail2ban stop`
+8. Start it again:  
+  `$ sudo service fail2ban start`
+
+Sources: Source: [DigitalOcean][15], 
+
+##### 2. f
 
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
