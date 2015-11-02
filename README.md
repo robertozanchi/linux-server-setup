@@ -206,7 +206,9 @@ creating
      `$ sudo apt-get install python-pip`
   2. Install virtualenv through pip:    
      `$ sudo pip install virtualenv`
-  3. 
+  3. Create virtual environment 'venv':    
+     `$ sudo virtualenv venv`
+
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
