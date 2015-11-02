@@ -346,9 +346,26 @@ Sources: [Trackets Blog][15], [Super User][16]
 7. Visit public IP in web browser to check that app is running.
 
 ###### 3. Enable OAuth logins
-1. 
 
-Sources: [GitHub][17], [Stackoverflow][18]
+
+  
+1. Open http://www.hcidata.info/host2ip.cgi and receive the Host name for your public IP-address, e.g. for 52.25.0.41, its ec2-52-25-0-41.us-west-2.compute.amazonaws.com
+2. Open the Apache configuration files for the web app:
+  `$ sudo vim /etc/apache2/sites-available/catalog.conf`
+3. Paste in the following line below ServerAdmin:  
+  `ServerAlias HOSTNAME`, e.g. ec2-52-25-0-41.us-west-2.compute.amazonaws.com
+4. Enable the virtual host:  
+  `$ sudo a2ensite catalog`
+5. To get the Google+ authorization working:  
+  1. Go to the project on the Developer Console: https://console.developers.google.com/project
+  2. Navigate to APIs & auth > Credentials > Edit Settings
+  3. add your host name and public IP-address to your Authorized JavaScript origins and your host name + oauth2callback to Authorized redirect URIs, e.g. http://ec2-52-25-0-41.us-west-2.compute.amazonaws.com/oauth2callback
+6. To get the Facebook authorization working:
+  1. Go on the Facebook Developers Site to My Apps https://developers.facebook.com/apps/
+  2. Click on your App, go to Settings and fill in your public IP-Address including prefixed hhtp:// in the Site URL field
+  3. To leave the development mode, so others can login as well, also fill in a contact email address in the respective field, "Save Changes", click on 'Status & Review'
+
+Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]  
 
 #### Additional Functionalities
 
@@ -371,3 +388,5 @@ Sources: [GitHub][17], [Stackoverflow][18]
 [16]: http://superuser.com/questions/769749/creating-user-with-password-or-changing-password-doesnt-work-in-postgresql
 [17]: https://help.github.com/articles/set-up-git/#platform-linux "Set Up Git for Linux"
 [18]: http://stackoverflow.com/questions/6142437/make-git-directory-web-inaccessible "Make .git directory web inaccessible"
+[19]: http://discussions.udacity.com/t/oauth-provider-callback-uris/20460 "OAuth Provider callback uris"
+[20]: http://httpd.apache.org/docs/2.2/en/vhosts/name-based.html "Name-based Virtual Host Support"
