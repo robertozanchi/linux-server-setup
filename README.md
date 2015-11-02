@@ -202,45 +202,44 @@ if __name__ == "__main__":
 ```
 
 ###### 3. Install Flask
-  1. Install pip:    
-     `$ sudo apt-get install python-pip`
-  2. Install virtualenv through pip:    
-     `$ sudo pip install virtualenv`
-  3. Create virtual environment 'venv':    
-     `$ sudo virtualenv venv`
-  4. Activate virtual environment:    
-    `$ source venv/bin/activate`
-  5. Install Flask within virtual environment:    
-    `$ sudo pip install Flask`
-  6. Test if the app is running after running:
-    `$ sudo python __init__.py`
-  7. Deactivate the environment:   
-    `$ deactivate`
+1. Install pip:    
+`$ sudo apt-get install python-pip`
+2. Install virtualenv through pip:    
+`$ sudo pip install virtualenv`
+3. Create virtual environment 'venv':    
+`$ sudo virtualenv venv`
+4. Activate virtual environment:    
+`$ source venv/bin/activate`
+5. Install Flask within virtual environment:    
+`$ sudo pip install Flask`
+6. Test if the app is running after running:
+`$ sudo python __init__.py`
+7. Deactivate the environment:   
+`$ deactivate`
 
 ###### 4. Configure and Enable a New Virtual Host
-  1. Issue the following command to create catalog.conf:     
-     `$ sudo nano /etc/apache2/sites-available/catalog.conf`
-  2. Paste in the following lines of code (customize public IP and folders):        
-
-  ```
-    <VirtualHost *:80>
-        ServerName 54.148.92.221
-        ServerAdmin admin@54.148.92.221
-        WSGIScriptAlias / /var/www/catalog/catalog.wsgi
-        <Directory /var/www/catalog/catalog/>
-            Order allow,deny
-            Allow from all
-        </Directory>
-        Alias /static /var/www/catalog/catalog/static
-        <Directory /var/www/catalog/catalog/static/>
-            Order allow,deny
-            Allow from all
-        </Directory>
-        ErrorLog ${APACHE_LOG_DIR}/error.log
-        LogLevel warn
-        CustomLog ${APACHE_LOG_DIR}/access.log combined
-    </VirtualHost>
-  ```
+1. Issue the following command to create catalog.conf:     
+`$ sudo nano /etc/apache2/sites-available/catalog.conf`
+2. Paste in the following lines of code (customize public IP and folders):        
+```
+  <VirtualHost *:80>
+      ServerName 54.148.92.221
+      ServerAdmin admin@54.148.92.221
+      WSGIScriptAlias / /var/www/catalog/catalog.wsgi
+      <Directory /var/www/catalog/catalog/>
+          Order allow,deny
+          Allow from all
+      </Directory>
+      Alias /static /var/www/catalog/catalog/static
+      <Directory /var/www/catalog/catalog/static/>
+          Order allow,deny
+          Allow from all
+      </Directory>
+      ErrorLog ${APACHE_LOG_DIR}/error.log
+      LogLevel warn
+      CustomLog ${APACHE_LOG_DIR}/access.log combined
+  </VirtualHost>
+```
   3. Enable the virtual host:     
   `$ sudo a2ensite catalog`
 
