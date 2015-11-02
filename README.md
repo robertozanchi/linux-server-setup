@@ -293,7 +293,7 @@ The steps to install and configure PostgreSQL are:
 `$ sudo su - postgre`
 5. Connect to the psql system:   
 `$ psql`
-6. Add postgre user with password:  
+6. Create a postgre user named 'catalog':  
   1. Create user with LOGIN role and set a password:  
     `# CREATE USER catalog WITH PASSWORD 'password';` (# stands for the command prompt in psql)
   2. Allow the user to create database tables:  
