@@ -115,8 +115,10 @@ The steps to change SSH port to 2200 and disable root user access are:
 6. Restart SSH:    
    `service ssh restart`    
 
-##### 7. Configure the Uncomplicated Firewall (UFW) to only allow incoming
-connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
+##### 7. Configure the Uncomplicated Firewall (UFW)
+The steps to configure the Uncomplicated Firewall (UFW) to only allow incoming
+connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) are:
+
 
 
 
