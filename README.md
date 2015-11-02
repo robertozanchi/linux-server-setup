@@ -315,6 +315,9 @@ Sources: [Trackets Blog][15], [Super User][16]
 
 ##### 12. Install git, clone and set up your Catalog App project
 
+###### 1. Install git and clone repository
+
+
 #### Additional Functionalities
 
 
