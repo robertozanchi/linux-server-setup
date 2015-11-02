@@ -322,8 +322,16 @@ Sources: [Trackets Blog][15], [Super User][16]
 `$ git config --global user.name "username"`
 3. Set up your email address to connect your commits to your account:  
 `$ git config --global user.email "me@email.com"`
+4. Clone app repository from GitHub:  
+  `$ git clone https://github.com/username/app.git`
+5. Move all content of cloned repository `/var/www/catalog/catalog/` delete the empty directory
+6. Make the repository inaccessible:  
+  1. Create and open .htaccess file:  
+    `$ cd /var/www/catalog/` and `$ sudo nano .htaccess` 
+  2. Paste in the following:  
+    `RedirectMatch 404 /\.git`
 
-Sources: [GitHub][17]
+Sources: [GitHub][17], [Stackoverflow][18]
 
 #### Additional Functionalities
 
@@ -345,3 +353,4 @@ Sources: [GitHub][17]
 [15]: http://blog.trackets.com/2013/08/19/postgresql-basics-by-example.html "PostgreSQL Basics by Example"
 [16]: http://superuser.com/questions/769749/creating-user-with-password-or-changing-password-doesnt-work-in-postgresql
 [17]: https://help.github.com/articles/set-up-git/#platform-linux "Set Up Git for Linux"
+[18]: http://stackoverflow.com/questions/6142437/make-git-directory-web-inaccessible "Make .git directory web inaccessible"
