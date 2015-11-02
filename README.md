@@ -188,7 +188,7 @@ creating
 6. Create the `__init__.py` file that will contain the flask application:
    `$ sudo nano __init__.py`
 7. Open `__init__.py`, add the code from step 8, exit and save:   
-   `$ sudo nano __init__.py`    
+   `$ sudo nano __init__.py`  
 8. Paste in the following code:   
   ```python  
     from flask import Flask  
@@ -199,6 +199,7 @@ creating
     if __name__ == "__main__":  
       app.run()  
   ```  
+  
   
       ```python  
       from flask import Flask  
