@@ -160,8 +160,9 @@ The steps to install and configure Apache to serve a Python mod_wsgi application
 Source: [Udacity blog][12]
 
 ##### 10. Install Flask and deploy a sample application
-This step entails installing mod_wsgi (if not previously installed),
-creating
+This entails installing mod_wsgi (if not previously installed),creating
+the Flask app, installing Flask, configuring and enabling a new virtual host,
+creating the .wsgi file, and updating modules and packages. 
 
 ###### 1. Install and Enable mod_wsgi
 1. Install mod_wsgi:     
@@ -284,6 +285,8 @@ Sources: [Digital Ocean][13], [github.com/stueken][14]
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
+
+Install and configure PostgreSQL
 
 ##### 12. Install git, clone and set up your Catalog App project
 
