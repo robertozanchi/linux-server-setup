@@ -349,13 +349,14 @@ Sources: [Trackets Blog][15], [Super User][16]
 
 
   
-1. Open http://www.hcidata.info/host2ip.cgi and receive the Host name for your public IP-address, e.g. for 52.25.0.41, its ec2-52-25-0-41.us-west-2.compute.amazonaws.com
+1. Open http://www.hcidata.info/host2ip.cgi and enter public IP address to receive Host name:   
+`http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/` for `54.148.92.221`
 2. Open the Apache configuration files for the web app:
-  `$ sudo vim /etc/apache2/sites-available/catalog.conf`
+`$ sudo vim /etc/apache2/sites-available/catalog.conf`
 3. Paste in the following line below ServerAdmin:  
-  `ServerAlias HOSTNAME`, e.g. ec2-52-25-0-41.us-west-2.compute.amazonaws.com
+`ServerAlias http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/`
 4. Enable the virtual host:  
-  `$ sudo a2ensite catalog`
+`$ sudo a2ensite catalog`
 5. To get the Google+ authorization working:  
   1. Go to the project on the Developer Console: https://console.developers.google.com/project
   2. Navigate to APIs & auth > Credentials > Edit Settings
