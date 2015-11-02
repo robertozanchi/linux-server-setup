@@ -313,7 +313,7 @@ The steps to install and configure PostgreSQL are:
 
 Sources: [Trackets Blog][15], [Super User][16]
 
-##### 12. Install git, clone and set up your Catalog App project
+##### 12. Install git, clone and set up your Flask web app
 
 ###### 1. Install git and clone repository
 1. Install Git:  
@@ -330,6 +330,9 @@ Sources: [Trackets Blog][15], [Super User][16]
     `$ cd /var/www/catalog/` and `$ sudo nano .htaccess` 
   2. Paste in the following:  
     `RedirectMatch 404 /\.git`
+
+###### 2. set up your Flask web app
+1. c
 
 Sources: [GitHub][17], [Stackoverflow][18]
 
