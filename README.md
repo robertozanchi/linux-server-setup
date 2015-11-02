@@ -149,7 +149,13 @@ Source: [Digital Ocean][11]
 ##### 9. Install and configure Apache to serve a Python mod_wsgi application
 The steps to install and configure Apache to serve a Python mod_wsgi application are:
 
-
+1. Install Apache:   
+   `$ sudo apt-get install apache2`
+2. Open browser and visit public IP address to load "It works!" page
+3. Install **mod_wsgi** tool and helper package **python-setuptools**:    
+   `$ sudo apt-get install python-setuptools libapache2-mod-wsgi`
+4. Restart Apache server:   
+   `$ sudo service apache2 restart`
 
 #### Additional Functionalities
 
