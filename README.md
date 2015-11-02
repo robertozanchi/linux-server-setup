@@ -404,9 +404,11 @@ Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]
 Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
 
 ##### 2. Install Monitor application Glances
-1. `$ sudo apt-get install python-pip build-essential python-dev`
-2. `$ sudo pip install Glances`
-3. `$ sudo pip install PySensors`
+1.  
+`$ sudo apt-get install python-pip build-essential python-dev`
+2. Install Glances:  
+`$ sudo pip install Glances`
+`$ sudo pip install PySensors`
 
 Sources: [Glances][22] and [Web Host Bug][23], [github.com/stueken][14]
 
