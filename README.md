@@ -94,12 +94,17 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
    `$ sudo cat .ssh/udacity.pub`
 7. Paste the copied key into grader's `authorized_keys` file:  
    `$ sudo nano authorized_keys`
+8. Set permissions on `.ssh` directory and `authorized_keys` file:   
+  `$ chmod 700 .ssh`
+  `$ chmod 644 .ssh/authorized_keys `
 
-
-##### 6. Change the SSH port from 22 to 2200 and disable root
+##### 6. Change the SSH port and disable root user
 The steps to change SSH port to 2200 and disable root user are:
 
-
+1. Open the SSH config file:   
+   `$ sudo nano /etc/ssh/sshd_config`
+2. Change port value to `Port 2200`
+3. 
 
 
 #### Additional Functionalities
