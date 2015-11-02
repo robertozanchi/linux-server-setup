@@ -170,7 +170,7 @@ creating the .wsgi file, and updating modules and packages.
 2. Enable mod_wsgi:    
 `sudo a2enmod wsgi`
 
-###### 2. Creating a Flask App
+###### 2. Create a sample Flask app
 1. Move to the /var/www directory:   
 `$ cd /var/www`
 2. Create catalog directory and move inside it:    
