@@ -283,7 +283,8 @@ Sources: [Digital Ocean][13], [github.com/stueken][14]
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
 
-Install and configure PostgreSQL
+###### 1. Install and configure PostgreSQL
+1. c
 
 ##### 12. Install git, clone and set up your Catalog App project
 
