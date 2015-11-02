@@ -88,7 +88,13 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
 3. Optionally, enter a passphrase for the new key pair
 4. Log in as grader and create .ssh directory in home directory:  
    `$ mkdir .ssh`
-5. 
+5. Create `authorized_keys` to store all public keys used by grader:   
+   `$ touch .ssh/authorized_keys`
+6. On the local machine open udacity.pub and copy its contents:  
+   `$ sudo cat .ssh/udacity.pub`
+7. Paste the copied key into grader's `authorized_keys` file:  
+   `$ sudo nano authorized_keys`
+
 
 ##### 6. Change the SSH port from 22 to 2200 and disable root
 The steps to change SSH port to 2200 and disable root user are:
