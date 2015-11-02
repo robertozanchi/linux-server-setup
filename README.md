@@ -160,9 +160,34 @@ The steps to install and configure Apache to serve a Python mod_wsgi application
 Source: [Udacity blog][12]
 
 ##### 10. Install Flask and deploy a sample application
+This step entails installing mod_wsgi (if not previously installed),
+creating
 
 ###### 1. Install and Enable mod_wsgi
+1. Install mod_wsgi:     
+   `$ sudo apt-get install libapache2-mod-wsgi python-dev`
+2. Enable mod_wsgi:    
+   `sudo a2enmod wsgi`
 
+###### 2. Creating a Flask App
+1. Move to the /var/www directory:   
+   `$ cd /var/www`
+2. Create catalog directory and move inside it:    
+   `$ sudo mkdir catalog`
+   `$ cd catalog`
+3. Within catalog, create another catalog directory and move inside it:   
+   `$ sudo mkdir catalog`
+   `$ cd catalog`
+4. Create two subdirectories named static and templates:   
+   `$ sudo mkdir static templates`
+5. The structure should be the following:   
+|----catalog
+|---------catalog
+|--------------static
+|--------------templates
+6. Create the __init__.py file that will contain the flask application:
+   `$ sudo nano __init__.py`
+7. 
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
