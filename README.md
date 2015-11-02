@@ -245,7 +245,8 @@ creating
   `$ sudo a2ensite catalog`
 
 ###### 4. Create the .wsgi file
-
+  1. Create a file named catalog.wsgi:   
+  `$ sudo nano /var/www/catalog.wsgi`
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
