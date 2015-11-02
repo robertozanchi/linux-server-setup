@@ -280,7 +280,7 @@ creating
   8. Deactivate the environment:   
     `$ deactivate`
 
-Sources: [Digital Ocean][13], 
+Sources: [Digital Ocean][13], [github.com/stueken][14]
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
@@ -303,4 +303,5 @@ The steps to install and configure PostgreSQL are:
 [11]: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
 [12]: http://blog.udacity.com/2015/03/step-by-step-guide-install-lamp-linux-apache-mysql-python-ubuntu.html
 [13]: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
-[14]: 
+[14]: https://github.com/stueken/FSND-P5_Linux-Server-Configuration/blob/master/README.md
+
