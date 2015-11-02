@@ -349,7 +349,7 @@ Sources: [Trackets Blog][15], [Super User][16]
 
 
   
-1. Open http://www.hcidata.info/host2ip.cgi and enter public IP address to receive Host name:   
+1. Open http://www.hcidata.info/host2ip.cgi and enter public IP address to receive hostname:   
 `http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/` for `54.148.92.221`
 2. Open the Apache configuration files for the web app:
 `$ sudo vim /etc/apache2/sites-available/catalog.conf`
@@ -360,7 +360,8 @@ Sources: [Trackets Blog][15], [Super User][16]
 5. To get the Google+ authorization working:  
   1. Go to the project on the Developer Console: https://console.developers.google.com/project
   2. Navigate to APIs & auth > Credentials > Edit Settings
-  3. add your host name and public IP-address to your Authorized JavaScript origins and your host name + oauth2callback to Authorized redirect URIs, e.g. http://ec2-52-25-0-41.us-west-2.compute.amazonaws.com/oauth2callback
+  3. Add hostname to Authorized JavaScript origins and hostname/oauth2callback to Authorized redirect URIs:
+  `http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/oauth2callback`
 6. To get the Facebook authorization working:
   1. Go on the Facebook Developers Site to My Apps https://developers.facebook.com/apps/
   2. Click on your App, go to Settings and fill in your public IP-Address including prefixed hhtp:// in the Site URL field
