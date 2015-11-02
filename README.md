@@ -202,7 +202,10 @@ creating
     ```
 
 ###### 3. Install Flask
+  1. Install virtualenv and Flask through pip (install pip if required):
+  2. 
   
+
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
 
