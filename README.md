@@ -293,8 +293,25 @@ The steps to install and configure PostgreSQL are:
 `$ sudo su - postgre`
 5. Connect to the psql system:   
 `$ psql`
-6. 
+6. Add postgre user with password:  
+  1. Create user with LOGIN role and set a password:  
+    `# CREATE USER catalog WITH PASSWORD 'PW-FOR-DB';` (# stands for the command prompt in psql)
+  2. Allow the user to create database tables:  
+    `# ALTER USER catalog CREATEDB;`
+  3. *List current roles and their attributes:
+    `# \du`
+7. Create database:  
+  `# CREATE DATABASE catalog WITH OWNER catalog;`
+8. Connect to the database catalog
+  `# \c catalog` 
+9. Revoke all rights:  
+  `# REVOKE ALL ON SCHEMA public FROM public;`
+10. Grant only access to the catalog role:  
+  `# GRANT ALL ON SCHEMA public TO catalog;`
+11. Exit out of PostgreSQl and the postgres user:  
+  `# \q`, then `$ exit` 
 
+Sources: [Trackets Blog][25] and [Super User][26]
 
 ##### 12. Install git, clone and set up your Catalog App project
 
