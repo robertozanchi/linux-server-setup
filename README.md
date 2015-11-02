@@ -410,9 +410,9 @@ Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
 `$ sudo pip install PySensors`
 
 2. Install Monitorix:   
-`sudo add-apt-repository ppa:upubuntu-com/ppa`   
-`sudo apt-get update`   
-`sudo apt-get install monitorix`   
+`$ sudo add-apt-repository ppa:upubuntu-com/ppa`   
+`$ sudo apt-get update`   
+`$ sudo apt-get install monitorix`   
 
 Sources: [Glances][22] and [Web Host Bug][23], [github.com/stueken][14]
 
