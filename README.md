@@ -98,7 +98,7 @@ Sources: [Ask Ubuntu][6], [Ask Ubuntu][7], [Digital Ocean][5]
   `$ chmod 700 .ssh`
   `$ chmod 644 .ssh/authorized_keys `
 
-##### 6. Change the SSH port and disable root user
+##### 6. Change the SSH port to 2200 and disable root user
 The steps to change SSH port to 2200 and disable root user access are:
 
 1. Open the SSH config file:   
@@ -115,7 +115,10 @@ The steps to change SSH port to 2200 and disable root user access are:
 6. Restart SSH:    
    `service ssh restart`    
 
-##### 7. 
+##### 7. Configure the Uncomplicated Firewall (UFW) to only allow incoming
+connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
+
+
 
 #### Additional Functionalities
 
