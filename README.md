@@ -403,7 +403,12 @@ Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]
 
 Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
 
-##### 2. f
+##### 2. Install Monitor application Glances
+1. `$ sudo apt-get install python-pip build-essential python-dev`
+2. `$ sudo pip install Glances`
+3. `$ sudo pip install PySensors`
+
+Sources: [Glances][22] and [Web Host Bug][23], [github.com/stueken][14]
 
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
@@ -426,3 +431,6 @@ Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
 [19]: http://discussions.udacity.com/t/oauth-provider-callback-uris/20460 "OAuth Provider callback uris"
 [20]: http://httpd.apache.org/docs/2.2/en/vhosts/name-based.html "Name-based Virtual Host Support"
 [21]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04 "How To Install and Use Fail2ban on Ubuntu 14.04"
+[22]: http://stackoverflow.com/questions/6142437/make-git-directory-web-inaccessible "Make .git directory web inaccessible"
+[23]: https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps "How To Secure PostgreSQL on an Ubuntu VPS"
+
