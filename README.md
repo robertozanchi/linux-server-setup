@@ -157,6 +157,13 @@ The steps to install and configure Apache to serve a Python mod_wsgi application
 4. Restart Apache server:   
    `$ sudo service apache2 restart`
 
+Source: [Udacity blog][12]
+
+##### 10. Install and configure PostgreSQL
+The steps to install and configure PostgreSQL are:
+
+
+
 #### Additional Functionalities
 
 
@@ -171,3 +178,4 @@ The steps to install and configure Apache to serve a Python mod_wsgi application
 [9]: https://www.udacity.com/course/viewer#!/c-ud299-nd/l-4331066009/m-4801089481
 [10]: http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
 [11]: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
+[12]: http://blog.udacity.com/2015/03/step-by-step-guide-install-lamp-linux-apache-mysql-python-ubuntu.html
