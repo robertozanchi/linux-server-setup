@@ -190,8 +190,8 @@ creating
   7. Open `__init__.py`, add the code from step 8, exit and save:   
      `$ sudo nano __init__.py`  
   8. Paste in the following code:  
-        
-    ```python  
+    ```
+      python  
       from flask import Flask  
       app = Flask(__name__)  
       @app.route("/")  
@@ -218,7 +218,9 @@ creating
    `$ deactivate`
 
 ###### 4. Configure and Enable a New Virtual Host
-  1. 
+  1. Issue the following command to create catalog.conf:     
+     `sudo nano /etc/apache2/sites-available/catalog.conf`
+  2. 
 
 ##### 11. Install and configure PostgreSQL
 The steps to install and configure PostgreSQL are:
