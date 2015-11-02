@@ -160,7 +160,7 @@ The steps to install and configure Apache to serve a Python mod_wsgi application
 Source: [Udacity blog][12]
 
 ##### 10. Install Flask and deploy a sample application
-This entails installing mod_wsgi (if not previously installed),creating
+This entails installing mod_wsgi (if not previously installed), creating
 the Flask app, installing Flask, configuring and enabling a new virtual host,
 creating the .wsgi file, and updating modules and packages. 
 
@@ -274,12 +274,12 @@ creating the .wsgi file, and updating modules and packages.
     `$ *sudo pip install flask-seasurf`
   5. Install oauth2client.client:   
     `$ sudo pip install --upgrade oauth2client`
-  6. Install SQLAlchemy:   
-    `$ sudo pip install sqlalchemy`
-  7. Install the Python PostgreSQL adapter psycopg:   
-    `$ sudo apt-get install python-psycopg2`
-  8. Deactivate the environment:   
-    `$ deactivate`
+6. Install SQLAlchemy:   
+`$ sudo pip install sqlalchemy`
+7. Install the Python PostgreSQL adapter psycopg:   
+`$ sudo apt-get install python-psycopg2`
+8. Deactivate the environment:   
+`$ deactivate`
 
 Sources: [Digital Ocean][13], [github.com/stueken][14]
 
