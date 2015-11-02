@@ -264,16 +264,16 @@ creating the .wsgi file, and updating modules and packages.
   `$ sudo service apache2 restart`
 
 ###### 5. Install modules and packages  
-  1. Activate virtual environment:   
-    `$ source venv/bin/activate`
-  2. Install httplib2 module in venv:   
-    `$ pip install httplib2`
-  3. Install requests module in venv:   
-    `$ pip install requests`
-  4. *Install flask.ext.seasurf (only seems to work when installed globally):   
-    `$ *sudo pip install flask-seasurf`
-  5. Install oauth2client.client:   
-    `$ sudo pip install --upgrade oauth2client`
+1. Activate virtual environment:   
+`$ source venv/bin/activate`
+2. Install httplib2 module in venv:   
+`$ pip install httplib2`
+3. Install requests module in venv:   
+`$ pip install requests`
+4. *Install flask.ext.seasurf (only seems to work when installed globally):   
+`$ *sudo pip install flask-seasurf`
+5. Install oauth2client.client:   
+`$ sudo pip install --upgrade oauth2client`
 6. Install SQLAlchemy:   
 `$ sudo pip install sqlalchemy`
 7. Install the Python PostgreSQL adapter psycopg:   
