@@ -346,9 +346,6 @@ Sources: [Trackets Blog][15], [Super User][16]
 7. Visit public IP in web browser to check that app is running.
 
 ###### 3. Enable OAuth logins
-
-
-  
 1. Open http://www.hcidata.info/host2ip.cgi and enter public IP address to receive hostname:   
 `http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/` for `54.148.92.221`
 2. Open the Apache configuration files for the web app:
@@ -404,7 +401,7 @@ Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]
 8. Start it again:  
   `$ sudo service fail2ban start`
 
-Sources: Source: [DigitalOcean][15], 
+Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
 
 ##### 2. f
 
@@ -428,3 +425,4 @@ Sources: Source: [DigitalOcean][15],
 [18]: http://stackoverflow.com/questions/6142437/make-git-directory-web-inaccessible "Make .git directory web inaccessible"
 [19]: http://discussions.udacity.com/t/oauth-provider-callback-uris/20460 "OAuth Provider callback uris"
 [20]: http://httpd.apache.org/docs/2.2/en/vhosts/name-based.html "Name-based Virtual Host Support"
+[21]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04 "How To Install and Use Fail2ban on Ubuntu 14.04"
