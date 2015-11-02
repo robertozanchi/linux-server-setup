@@ -196,7 +196,7 @@ creating
       app = Flask(__name__)  
       @app.route("/")  
       def hello():  
-        return "Veni vidi vici!!"  
+        return "Hello, Udacity!"  
       if __name__ == "__main__":  
         app.run()  
     ```  
