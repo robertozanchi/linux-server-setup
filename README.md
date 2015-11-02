@@ -362,10 +362,6 @@ Sources: [Trackets Blog][15], [Super User][16]
   2. Navigate to APIs & auth > Credentials > Edit Settings
   3. Add hostname to Authorized JavaScript origins and hostname/oauth2callback to Authorized redirect URIs:
   `http://ec2-54-148-92-221.us-west-2.compute.amazonaws.com/oauth2callback`
-6. To get the Facebook authorization working:
-  1. Go on the Facebook Developers Site to My Apps https://developers.facebook.com/apps/
-  2. Click on your App, go to Settings and fill in your public IP-Address including prefixed hhtp:// in the Site URL field
-  3. To leave the development mode, so others can login as well, also fill in a contact email address in the respective field, "Save Changes", click on 'Status & Review'
 
 Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]  
 
