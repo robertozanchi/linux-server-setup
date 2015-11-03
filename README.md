@@ -417,7 +417,7 @@ Sources: [DigitalOcean][21],  [github.com/stueken][14]
 Sources: [Glances][22] and [Web Host Bug][23], [github.com/stueken][14]
 
 #### Packages and versions installed in virtual machine venv
-
+```
 Cheetah==2.4.4   
 Flask==0.9   
 Flask-Login==0.1.3   
@@ -466,6 +466,7 @@ virtualenv==13.1.2
 wheel==0.24.0   
 wsgiref==0.1.2   
 zope.interface==4.0.5   
+```
 
 [1]: https://github.com/robertozanchi/catalog-app
 [2]: https://www.udacity.com/account#!/development_environment
