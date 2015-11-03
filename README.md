@@ -401,7 +401,7 @@ Sources: [GitHub][17], [Stackoverflow][18], [Udacity][19], [Apache][20]
 8. Start it again:  
   `$ sudo service fail2ban start`
 
-Sources: Source: [DigitalOcean][21],  [github.com/stueken][14]
+Sources: [DigitalOcean][21],  [github.com/stueken][14]
 
 ##### 2. Install monitor applications Glances and Monitorix
 1. Install Glances:   
